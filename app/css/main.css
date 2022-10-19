@@ -45,26 +45,8 @@ a {
     margin-right: 40px;
 }
 
-.dark-mode-button {
-    flex: 1;
-    color: var(--lightblue) !important;
-    padding: 8px 4px;
-    background-color: var(--white);
-    text-decoration: none;
-    text-align: center;
-    font-weight: bolder;
-    border: none;
-    font-size: medium;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 10px, rgba(0, 0, 0, 0.12) 0px 4px 4px;
-}
-
-.dark-mode-button:hover {
-    color: var(--lightblue) !important;
-    background-color: var(--white);
-    box-shadow: var(--lightblue) 0px 2px 12px, var(--darkblue) 0px 4px 14px;
-    font-weight: bolder;
-    padding: 8px 4px;
+.header-item {
+    padding: 0 1em;
 }
 
 .index-image-box {
