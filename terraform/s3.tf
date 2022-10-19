@@ -7,14 +7,6 @@ resource "aws_s3_bucket_acl" "bucket_acl" {
   bucket = aws_s3_bucket.www_bucket.id 
 }
 
-#resource "aws_s3_bucket_object" "object" {
-#  for_each = fileset("../app", "*")
-#
- # bucket = "www.papp012-websitetest.com"
-  #key    = each.value
-  #source = "../app/${each.value}"
-#}
-
 resource "aws_s3_bucket_object" "index_page" {
   bucket = "${aws_s3_bucket.www_bucket.id}"
   key = "index.html"
