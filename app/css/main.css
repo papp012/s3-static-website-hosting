@@ -1,0 +1,97 @@
+:root {
+    --darkblue: #012169;
+    --lightblue: rgb(57, 79, 129);
+    --white: #ffffff;
+    --red: #c8102e;
+    --lightgray: #757474;
+    --black: #212121;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    color: var(--black);
+    font-family: 'Operator Mono', 'Source Code Pro', Menlo, Monaco, Consolas, Courier New, monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-header {
+    color: var(--darkblue);
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.page-logo {
+    width: auto;
+    border-radius: 10px;
+    max-height:40px;
+    margin-right: 35px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 10px, rgba(0, 0, 0, 0.12) 0px 4px 4px;
+    border: 3px solid white;
+}
+
+.page-title {
+    color: var(--darkblue);
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.dark-mode-button {
+    flex: 1;
+    color: var(--lightblue) !important;
+    padding: 8px 4px;
+    background-color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    border: none;
+    font-size: medium;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 10px, rgba(0, 0, 0, 0.12) 0px 4px 4px;
+}
+
+.dark-mode-button:hover {
+    color: var(--lightblue) !important;
+    background-color: var(--white);
+    box-shadow: var(--lightblue) 0px 2px 12px, var(--darkblue) 0px 4px 14px;
+    font-weight: bolder;
+    padding: 8px 4px;
+}
+
+.index-image-box {
+    background-color: var(--darkblue);
+    height: 86.5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    object-fit: cover;
+
+}
+
+.index-image {
+    filter: grayscale(100%);
+    opacity: 0.4;
+}
+
+.page-body {
+    padding: 20px 50px;
+}
+
+.welcome-text {
+    position: fixed;
+    top: 700px;
+    left: 150px;
+    color: var(--white);
+    font-weight: bolder;
+    font-size: xxx-large;
+}
