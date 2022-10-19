@@ -1,5 +1,6 @@
 resource "aws_s3_bucket" "www_bucket" {
   bucket = "www.${var.prefix}-websitetest.com"
+  policy = templatefile("s3-policy.json", { prefix = var.prefix })
 
   website {
     index_document = "index.html"
